@@ -1,0 +1,4 @@
+.env/
+qdocpy/__pycache__/
+qdocpy/parser/__pycache__/
+test_*
