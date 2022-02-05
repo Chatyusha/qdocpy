@@ -2,3 +2,4 @@
 qdocpy/__pycache__/
 qdocpy/parser/__pycache__/
 test_*
+qdocpy.egg-info/
