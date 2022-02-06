@@ -1,1 +1,5 @@
-from . import answerset
+from . import (
+    answerset,
+    sentence,
+    document
+)
