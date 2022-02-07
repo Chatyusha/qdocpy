@@ -14,7 +14,7 @@ class Qdoc:
         ptn_whitespace = re.compile(r"^[ |\t]*")
         ptn_whitespace_begin = re.compile(r"{[ |\t]*")
         ptn_whitespace_end = re.compile(r"[ |\t]*}")
-        text = ptn_whitespace("",text)
+        text = ptn_whitespace.sub("",text)
         text = ptn_enter.sub("",text)
         text = ptn_whitespace_begin.sub("{",text)
         text = ptn_whitespace_end.sub("}",text)
