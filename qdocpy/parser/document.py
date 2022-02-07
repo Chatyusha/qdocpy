@@ -11,7 +11,7 @@ class Qdoc:
     
     def __format(self,text):
         ptn_enter = re.compile(r"\n")
-        ptn_whitespace = re,compile(r"^[ |\t]*")
+        ptn_whitespace = re.compile(r"^[ |\t]*")
         ptn_whitespace_begin = re.compile(r"{[ |\t]*")
         ptn_whitespace_end = re.compile(r"[ |\t]*}")
         text = ptn_whitespace("",text)
