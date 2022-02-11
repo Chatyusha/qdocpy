@@ -44,7 +44,8 @@ class Qdoc:
             for j in i.answers:
                 if self.taggroup.get(j.tag) is None:
                     self.taggroup[j.tag] = []
-                self.taggroup[j.tag].append(j.answer)
+                if j.answer not in self.taggroup[j.tag]:
+                    self.taggroup[j.tag].append(j.answer)
 
     def to_doct(self):
         data = {}
